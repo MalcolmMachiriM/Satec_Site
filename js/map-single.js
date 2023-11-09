@@ -4,7 +4,7 @@
 			maxZoom: 20,
 			tap: false,
 			gestureHandling: true,
-			center: [-17.814221135978176, 31.06965551466689]
+			center: [-25.706288, 27.240085]
 		});
 
 		map.scrollWheelZoom.disable();
@@ -21,7 +21,7 @@
 			popupAnchor: [-20, -42]
 		});
 
-		var marker = L.marker([-17.814221135978176, 31.06965551466689], {
+		var marker = L.marker([-25.706288, 27.240085], {
 			icon: icon
 		}).addTo(map);
 	}

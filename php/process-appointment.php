@@ -1,8 +1,8 @@
 <?php
 // Replace these values with your actual database credentials
-$servername = "satecoxb";
-$username = "admin01";
-$password = "t!n@\$hem";
+$servername = "satecoxb_Satec";
+$username = "satecoxb_admin01";
+$password = "t!n@shem";
 $dbname = "satecoxb_Satec";
 
 // Check if the form is submitted
@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Prepare and bind the statement
-    $stmt = $conn->prepare("INSERT INTO ContactForm (firstname, phonenumber, email, message) VALUES (?, ?, ?, ?)");
+    $stmt = $conn->prepare("INSERT INTO ContactForm (Name, Phonenumber, Email, Message) VALUES (?, ?, ?, ?)");
     $stmt->bind_param("ssss", $firstname, $phonenumber, $email, $message);
 
     // Execute the statement
